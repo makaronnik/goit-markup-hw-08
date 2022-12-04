@@ -1,0 +1,29 @@
+.header-contacts {
+    display: flex;
+    
+    margin-left: auto;
+}
+
+.header-contacts__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.header-contacts__link {
+    @extend %link;
+    
+    color: $text-color-secondary;
+}
+
+.header-contacts__icon {
+    --color4: currentColor;
+
+    margin-right: 10px;
+
+    &.icon-envelope {
+        vertical-align: -0.1em;
+    }
+
+    &.icon-smartphone {
+        vertical-align: -0.25em;
+    }
+}

@@ -1,0 +1,51 @@
+.subscription {
+    margin-left: 93px;
+}
+
+.subscription__form-group {
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.subscription__email-input {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 50px;
+    width: 358px;
+
+    color: $text-color-subscription-input;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &,
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    &::placeholder {
+        color: $text-color-subscription-placeholder;
+    }
+
+    &:focus,
+    &:focus-visible {
+        border-color: $input-border-color-focused;
+        outline: none;
+    }
+}
+
+.subscription__submit-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.subscription__icon {
+    margin-left: 10px;
+}
