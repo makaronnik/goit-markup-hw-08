@@ -41,11 +41,11 @@
     border-radius: 50%;
     background-color: $bg-color-modal;
     cursor: pointer;
-}
 
-.modal__close:hover .modal__icon,
-.modal__close:focus .modal__icon {
-    fill: $text-color-accent;
+    &:hover .modal__icon,
+    &:focus .modal__icon {
+        fill: $text-color-accent;
+    }
 }
 
 .modal__heading {

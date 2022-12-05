@@ -1,13 +1,22 @@
 .site-nav {
-    margin-left: 93px;
+    @media screen and (min-width: $tablet-min) {
+        margin-left: 93px;
+    }
 }
 
 .site-nav__list {
-    display: flex;
+    @media screen and (min-width: $tablet-min) {
+        display: flex;
+    }
 }
 
-.site-nav__item:not(:first-child) {
-    margin-left: 50px;
+.site-nav__item:not(:first-child) {  
+    margin-top: 35px;  
+
+    @media screen and (min-width: $tablet-min) {
+        margin-top: 0;
+        margin-left: 50px;
+    }
 }
 
 .site-nav__link {
@@ -16,7 +25,8 @@
     &--current {
         color: $text-color-accent;
 
-        &::after {
+        @media screen and (min-width: $tablet-min) {
+            &::after {
                 position: absolute;
                 left: 0;
                 bottom: -1px;
@@ -29,5 +39,6 @@
                 border-radius: 2px;
                 background-color: $text-color-accent;
             }
+        }
     }
 }
