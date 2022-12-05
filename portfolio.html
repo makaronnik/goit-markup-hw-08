@@ -25,8 +25,8 @@
       <div class="site-header__container container">
         <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
 
-        <div class="site-menu">
-          <button class="menu-button menu-button--close" data-menu-close>
+        <div class="site-menu" id="site-menu">
+          <button class="menu-button menu-button--close">
             <svg class="menu-button__icon" height="40" width="40">
               <use href="./images/icons.svg#icon-close_menu"></use>
             </svg>
@@ -73,7 +73,11 @@
           </ul>
         </div>
 
-        <button class="menu-button menu-button--open" data-menu-open>
+        <button
+          class="menu-button menu-button--open"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
           <svg class="menu-button__icon" height="40" width="40">
             <use href="./images/icons.svg#icon-open_menu"></use>
           </svg>
@@ -387,5 +391,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

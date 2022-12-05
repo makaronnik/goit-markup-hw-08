@@ -25,8 +25,8 @@
       <div class="site-header__container container">
         <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
 
-        <div class="site-menu">
-          <button class="menu-button menu-button--close" data-menu-close>
+        <div class="site-menu" id="site-menu">
+          <button class="menu-button menu-button--close">
             <svg class="menu-button__icon" height="40" width="40">
               <use href="./images/icons.svg#icon-close_menu"></use>
             </svg>
@@ -71,7 +71,11 @@
           </ul>
         </div>
 
-        <button class="menu-button menu-button--open" data-menu-open>
+        <button
+          class="menu-button menu-button--open"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
           <svg class="menu-button__icon" height="40" width="40">
             <use href="./images/icons.svg#icon-open_menu"></use>
           </svg>
@@ -79,8 +83,8 @@
       </div>
     </header>
 
-    <!-- <main>
-      <section class="hero">
+    <main>
+      <!-- <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__heading">
             Ефективні рішення для<br />
@@ -90,9 +94,9 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <section class="features section">
+      <!-- <section class="features section">
         <div class="container">
           <h2 class="features__heading visibility-hidden">Особливості</h2>
           <ul class="features-list">
@@ -142,9 +146,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="competence section">
+      <!-- <section class="competence section">
         <div class="container">
           <h2 class="competence__heading heading">Чим ми займаємося</h2>
           <ul class="competence-list text-center">
@@ -183,9 +187,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__heading heading">Наша команда</h2>
 
@@ -360,9 +364,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__heading heading">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -410,8 +414,8 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- <footer class="site-footer">
       <div class="site-footer__container container">
@@ -571,5 +575,6 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
