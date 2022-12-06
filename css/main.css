@@ -473,6 +473,11 @@ body {
 .competence {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .competence {
+    display: none;
+  }
+}
 
 .competence-list {
   display: flex;
