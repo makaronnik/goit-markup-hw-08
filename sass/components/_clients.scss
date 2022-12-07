@@ -1,39 +1,55 @@
 .clients__list {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 30px - #{$list-items-gap};
+  margin-left: calc(#{$list-items-gap} * -1);
+
+  @media screen and (min-width: $desktop-min) {
     margin-top: 50px;
+  }
 }
 
 .clients__item {
-    flex-basis: calc((100% - #{$list-items-gap} * 5) / 6);
+  flex-basis: calc((100% - #{$list-items-gap} * 2) / 2);
 
-    &:not(:first-child) {
-        margin-left: $list-items-gap;
-    }
+  margin-top: $list-items-gap;
+  margin-left: $list-items-gap;
+
+  @media screen and (min-width: $tablet-min) {
+    flex-basis: calc((100% - #{$list-items-gap} * 3) / 3);
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    flex-basis: calc((100% - #{$list-items-gap} * 6) / 6);
+
+    margin-top: 0;
+  }
 }
 
 .clients__link {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    border-radius: 4px;
-    color: $thumb-color;
-    border: 1px solid $thumb-color;
+  border-radius: 4px;
+  color: $thumb-color;
+  border: 1px solid $thumb-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        color: $thumb-color-hover;
-        border-color: $thumb-color-hover;
-    }
+  &:hover,
+  &:focus {
+    color: $thumb-color-hover;
+    border-color: $thumb-color-hover;
+  }
 }
 
 .clients__icon {
-    --color1: currentColor;
+  --color1: currentColor;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
