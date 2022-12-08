@@ -90,7 +90,7 @@
         <div class="container">
           <h1 class="portfolio__heading visibility-hidden">Наше портфоліо</h1>
 
-          <ul class="portfolio-filter text-center">
+          <ul class="portfolio-filter">
             <li class="portfolio-filter__item">
               <button
                 type="button"
@@ -117,12 +117,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/technoquack.jpg"
-                    alt="Ноутбук з зображеними на екрані білявкою у чорній сорочці, блондином у білій футболці та гірчичному жакеті та брюнетки у світлій сорочці"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/technoquack.jpg 1x, ./images/technoquack@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/technoquack-tablet.jpg    1x,
+                        ./images/technoquack-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/technoquack-mobile.jpg    1x,
+                        ./images/technoquack-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/technoquack.jpg"
+                      alt="Ноутбук з зображеними на екрані білявкою у чорній сорочці, блондином у білій футболці та гірчичному жакеті та брюнетки у світлій сорочці"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -138,12 +157,34 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/new-orleans-vs-golden-star-poster.jpg"
-                    alt="Два баскетболіста, один у фіолетовій формі, інший у білій, які змагаються за м'яч"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/new-orleans-vs-golden-star-poster.jpg    1x,
+                        ./images/new-orleans-vs-golden-star-poster@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/new-orleans-vs-golden-star-poster-tablet.jpg    1x,
+                        ./images/new-orleans-vs-golden-star-poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/new-orleans-vs-golden-star-poster-mobile.jpg    1x,
+                        ./images/new-orleans-vs-golden-star-poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/new-orleans-vs-golden-star-poster.jpg"
+                      alt="Два баскетболіста, один у фіолетовій формі, інший у білій, які змагаються за м'яч"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -159,12 +200,34 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/seafood-restaurant.jpg"
-                    alt="Риба ті логотип компанії"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood-restaurant.jpg    1x,
+                        ./images/seafood-restaurant@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-restaurant-tablet.jpg    1x,
+                        ./images/seafood-restaurant-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-restaurant-mobile.jpg    1x,
+                        ./images/seafood-restaurant-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/seafood-restaurant.jpg"
+                      alt="Риба та логотип компанії"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -180,12 +243,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/project-prime.jpg"
-                    alt="Чорні навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/project-prime.jpg 1x, ./images/project-prime@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-prime-tablet.jpg    1x,
+                        ./images/project-prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-prime-mobile.jpg    1x,
+                        ./images/project-prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/project-prime.jpg"
+                      alt="Чорні навушники"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -201,12 +283,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/project-boxes.jpg"
-                    alt="Біла прямокутна коробка більшого розміру та картонна меншого"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/project-boxes.jpg 1x, ./images/project-boxes@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-boxes-tablet.jpg    1x,
+                        ./images/project-boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-boxes-mobile.jpg    1x,
+                        ./images/project-boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/project-boxes.jpg"
+                      alt="Біла прямокутна коробка більшого розміру та картонна меншого"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -222,12 +323,34 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="Монітор фірми Apple з зображенням темного сайту з мапою"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders.jpg    1x,
+                        ./images/inspiration-has-no-borders@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders-tablet.jpg    1x,
+                        ./images/inspiration-has-no-borders-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders-mobile.jpg    1x,
+                        ./images/inspiration-has-no-borders-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/inspiration-has-no-borders.jpg"
+                      alt="Монітор фірми Apple з зображенням темного сайту з мапою"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -243,12 +366,34 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/edition-limited-edition.jpg"
-                    alt="Розгорнута книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/edition-limited-edition.jpg    1x,
+                        ./images/edition-limited-edition@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition-limited-edition-tablet.jpg    1x,
+                        ./images/edition-limited-edition-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition-limited-edition-mobile.jpg    1x,
+                        ./images/edition-limited-edition-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/edition-limited-edition.jpg"
+                      alt="Розгорнута книга"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -264,12 +409,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/technoquack.jpg"
-                    alt="Ноутбук з зображеними на екрані білявкою у чорній сорочці, блондином у білій футболці та гірчичному жакеті та брюнетки у світлій сорочці"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/lab-project.jpg 1x, ./images/lab-project@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-project-tablet.jpg    1x,
+                        ./images/lab-project-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-project-mobile.jpg    1x,
+                        ./images/lab-project-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/lab-project.jpg"
+                      alt="Ноутбук з зображеними на екрані білявкою у чорній сорочці, блондином у білій футболці та гірчичному жакеті та брюнетки у світлій сорочці"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -285,12 +449,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    class="image-block"
-                    src="./images/growing-business.jpg"
-                    alt="Ноутбук на якому хтось працює, але видно тільки кисті його рук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/growing-business.jpg 1x, ./images/growing-business@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing-business-tablet.jpg    1x,
+                        ./images/growing-business-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing-business-mobile.jpg    1x,
+                        ./images/growing-business-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-cards__image image-block"
+                      src="./images/growing-business.jpg"
+                      alt="Ноутбук на якому хтось працює, але видно тільки кисті його рук"
+                    />
+                  </picture>
                   <p class="portfolio-cards__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
