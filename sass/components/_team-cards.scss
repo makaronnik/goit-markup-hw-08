@@ -52,6 +52,23 @@
   }
 }
 
+.team-cards__thumb {
+  @media screen and (max-width: $mobile-fixed) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+  }
+}
+
+.team-cards__image {
+  @media screen and (max-width: $mobile-fixed) {
+    height: 100%;
+    width: auto;
+  }
+}
+
 .team-cards__description {
   padding-top: 30px;
   padding-bottom: 30px;
