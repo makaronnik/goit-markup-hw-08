@@ -13,7 +13,7 @@
 
   function toggleModal() {
     refs.backdrop.classList.toggle('is-hidden');
-    const isModalOpen = refs.modal.classList.contains('is-hidden');
+    const isModalOpen = refs.backdrop.classList.contains('is-hidden');
     const scrollLockMethod = !isModalOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   }
