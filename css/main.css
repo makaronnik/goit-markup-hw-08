@@ -693,6 +693,7 @@ body {
   .site-footer__container {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
